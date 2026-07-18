@@ -48,6 +48,9 @@ The original datasets are derived from:
 
 ## Structure
 
+## Structure
+
+```text
 GenIDS-Framework/
 │
 ├── README.md
@@ -95,6 +98,7 @@ GenIDS-Framework/
 │
 ├── requirements.txt
 └── citation.bib
+```
 
 ## Computational Environment
 
