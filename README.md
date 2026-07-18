@@ -48,8 +48,6 @@ The original datasets are derived from:
 
 ## Structure
 
-## Structure
-
 ```text
 GenIDS-Framework/
 │
