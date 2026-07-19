@@ -34,17 +34,16 @@ The framework supports:
 
 ## Datasets
 
-The experiments use the processed datasets made available in the [GenIDS Benchmark](LINK_DO_REPOSITORIO).
-
-- GenIDS-NB15
-- GenIDS-CIC17
-- GenIDS-CIC18
+The experiments use the processed datasets made available in the [GenIDS Benchmark](https://zenodo.org/10.5281/zenodo.21435638).
+- [GenIDS-NB15](https://drive.google.com/drive/folders/1ASpkvg6UUJ2HWq2Xn5goJPXmVEWBHIeR)
+- [GenIDS-CIC17](https://drive.google.com/drive/folders/1iWY9djW9Y5KBROlafgLgUx05cKipzW8e)
+- [GenIDS-CIC18](https://drive.google.com/drive/folders/1uuHYlvi0TUSjUEHK67NKnX00eA166D7J?usp=sharing)
 
 The original datasets are derived from:
 
-- UNSW-NB15
-- CIC-IDS2017
-- CIC-IDS2018
+- [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset)
+- [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html)
+- [CIC-IDS2018](https://www.unb.ca/cic/datasets/ids-2018.html)
 
 ## Structure
 
