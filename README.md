@@ -34,10 +34,10 @@ The framework supports:
 
 ## Datasets
 
-The experiments use the processed datasets made available in the [GenIDS Benchmark](https://zenodo.org/10.5281/zenodo.21435638).
-- [GenIDS-NB15](https://drive.google.com/drive/folders/1ASpkvg6UUJ2HWq2Xn5goJPXmVEWBHIeR)
-- [GenIDS-CIC17](https://drive.google.com/drive/folders/1iWY9djW9Y5KBROlafgLgUx05cKipzW8e)
-- [GenIDS-CIC18](https://drive.google.com/drive/folders/1uuHYlvi0TUSjUEHK67NKnX00eA166D7J?usp=sharing)
+The experiments use the processed datasets made available in the [GenIDS Benchmark](https://doi.org/10.5281/zenodo.21435638).
+- [GenIDS-NB15](https://doi.org/10.5281/zenodo.21435638)
+- [GenIDS-CIC17](https://doi.org/10.5281/zenodo.21435638)
+- [GenIDS-CIC18](https://doi.org/10.5281/zenodo.21435638)
 
 The original datasets are derived from:
 
