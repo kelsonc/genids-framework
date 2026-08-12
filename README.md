@@ -73,9 +73,19 @@ GenIDS-Framework/
 |   |-- CODE_DOCUMENTATION.md
 |   `-- REPRODUCIBILITY.md
 |
-|-- flow_extraction_dataset_customization/
+|-- flow_extraction/
 |   |-- README.md
 |   `-- notebooks/
+|       |-- extraction_genids-nb15.ipynb
+|       |-- extraction_genids-cic17.ipynb
+|       |-- extraction_genids-cic18.ipynb
+|
+|-- dataset_customization/
+|   |-- README.md
+|   `-- notebooks/
+|       |-- customization_genids-nb15.ipynb
+|       |-- customization_genids-cic17.ipynb
+|       |-- customization_genids-cic18.ipynb
 |
 |-- baselines/
 |   |-- README.md
@@ -161,9 +171,9 @@ Detailed instructions will be available in `docs/REPRODUCIBILITY.md`.
 
 The experiments use the following standardized datasets:
 
-- **GenIDS-NB15**, derived from [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset);;
-- **GenIDS-CIC17**, derived from [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html); and
-- **GenIDS-CIC18**, derived from [CIC-IDS2018](https://www.unb.ca/cic/datasets/ids-2018.html).
+- **[GenIDS-NB15](https://zenodo.org/records/21435638)**, derived from [UNSW-NB15](https://research.unsw.edu.au/projects/unsw-nb15-dataset);
+- **[GenIDS-CIC17](https://zenodo.org/records/21435638)**, derived from [CIC-IDS2017](https://www.unb.ca/cic/datasets/ids-2017.html); and
+- **[GenIDS-CIC18](https://zenodo.org/records/21435638)**, derived from [CIC-IDS2018](https://www.unb.ca/cic/datasets/ids-2018.html).
 
 The processed datasets used by the experimental notebooks are available in the [GenIDS Benchmark](https://zenodo.org/records/21435638) via the Zenodo permanent record. The original public datasets are not redistributed in this GitHub repository. The GenIDS versions were generated from the original network traffic captures using NFStream, producing a common set of flow features for cross-dataset experiments. The datasets were subsequently preprocessed and labeled according to the methodology described in the paper.
 
