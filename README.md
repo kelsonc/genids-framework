@@ -203,7 +203,6 @@ The reproduction resources include:
 - instructions for downloading and organizing the GenIDS Benchmark datasets;
 - fixed software dependencies;
 - environment-configuration instructions;
-- execution scripts;
 - mapping between notebooks and experiments.
 
 Detailed instructions are available in `docs/REPRODUCIBILITY.md`.
