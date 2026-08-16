@@ -96,12 +96,12 @@ The scaler and PCA transformation are fitted on source-domain training data and 
 
 | Notebook | Source domain | Algorithm | Classification |
 |---|---|---|---|
-| [`1.unsw_xgb_pca.ipynb`](notebooks/in1/1.unsw_xgb_pca.ipynb) | GenIDS-NB15 | XGBoost | Binary |
-| [`2.cic17_xgb_pca.ipynb`](notebooks/in1/2.cic17_xgb_pca.ipynb) | GenIDS-CIC17 | XGBoost | Binary |
-| [`3.cic18_xgb_pca.ipynb`](notebooks/in1/3.cic18_xgb_pca.ipynb) | GenIDS-CIC18 | XGBoost | Binary |
-| [`4.unsw_iforest_pca.ipynb`](notebooks/in1/4.unsw_iforest_pca.ipynb) | GenIDS-NB15 | Isolation Forest | Binary anomaly detection |
-| [`5.cic17_iforest_pca.ipynb`](notebooks/in1/5.cic17_iforest_pca.ipynb) | GenIDS-CIC17 | Isolation Forest | Binary anomaly detection |
-| [`6.cic18_iforest_pca.ipynb`](notebooks/in1/6.cic18_iforest_pca.ipynb) | GenIDS-CIC18 | Isolation Forest | Binary anomaly detection |
+| [`1.unsw_xgb_pca.ipynb`](experiments/notebooks/in1/1.unsw_xgb_pca.ipynb) | GenIDS-NB15 | XGBoost | Binary |
+| [`2.cic17_xgb_pca.ipynb`](experiments/notebooks/in1/2.cic17_xgb_pca.ipynb) | GenIDS-CIC17 | XGBoost | Binary |
+| [`3.cic18_xgb_pca.ipynb`](experiments/notebooks/in1/3.cic18_xgb_pca.ipynb) | GenIDS-CIC18 | XGBoost | Binary |
+| [`4.unsw_iforest_pca.ipynb`](experiments/notebooks/in1/4.unsw_iforest_pca.ipynb) | GenIDS-NB15 | Isolation Forest | Binary anomaly detection |
+| [`5.cic17_iforest_pca.ipynb`](experiments/notebooks/in1/5.cic17_iforest_pca.ipynb) | GenIDS-CIC17 | Isolation Forest | Binary anomaly detection |
+| [`6.cic18_iforest_pca.ipynb`](experiments/notebooks/in1/6.cic18_iforest_pca.ipynb) | GenIDS-CIC18 | Isolation Forest | Binary anomaly detection |
 
 The XGBoost notebooks use 20% of the source data for training and 80% for intradomain testing. The Isolation Forest notebooks train on 20% of the normal source flows and combine the remaining normal flows with all source attacks for validation. The Isolation Forest decision threshold is selected with Youden's J statistic and reused without recalibration in both interdomain tests.
 
@@ -113,12 +113,12 @@ IN2 evaluates Chi-Square as an isolated feature-selection intervention. The meth
 
 | Notebook | Source domain | Algorithm | Classification |
 |---|---|---|---|
-| [`1.unsw_xgb_chisquare.ipynb`](notebooks/in2/1.unsw_xgb_chisquare.ipynb) | GenIDS-NB15 | XGBoost | Binary |
-| [`2.cic17_xgb_chisquare.ipynb`](notebooks/in2/2.cic17_xgb_chisquare.ipynb) | GenIDS-CIC17 | XGBoost | Binary |
-| [`3.cic18_xgb_chisquare.ipynb`](notebooks/in2/3.cic18_xgb_chisquare.ipynb) | GenIDS-CIC18 | XGBoost | Binary |
-| [`4.unsw_iforest_chisquare.ipynb`](notebooks/in2/4.unsw_iforest_chisquare.ipynb) | GenIDS-NB15 | Isolation Forest | Binary anomaly detection |
-| [`5.cic17_iforest_chisquare.ipynb`](notebooks/in2/5.cic17_iforest_chisquare.ipynb) | GenIDS-CIC17 | Isolation Forest | Binary anomaly detection |
-| [`6.cic18_iforest_chisquare.ipynb`](notebooks/in2/6.cic18_iforest_chisquare.ipynb) | GenIDS-CIC18 | Isolation Forest | Binary anomaly detection |
+| [`1.unsw_xgb_chisquare.ipynb`](experiments/notebooks/in2/1.unsw_xgb_chisquare.ipynb) | GenIDS-NB15 | XGBoost | Binary |
+| [`2.cic17_xgb_chisquare.ipynb`](experiments/notebooks/in2/2.cic17_xgb_chisquare.ipynb) | GenIDS-CIC17 | XGBoost | Binary |
+| [`3.cic18_xgb_chisquare.ipynb`](experiments/notebooks/in2/3.cic18_xgb_chisquare.ipynb) | GenIDS-CIC18 | XGBoost | Binary |
+| [`4.unsw_iforest_chisquare.ipynb`](experiments/notebooks/in2/4.unsw_iforest_chisquare.ipynb) | GenIDS-NB15 | Isolation Forest | Binary anomaly detection |
+| [`5.cic17_iforest_chisquare.ipynb`](experiments/notebooks/in2/5.cic17_iforest_chisquare.ipynb) | GenIDS-CIC17 | Isolation Forest | Binary anomaly detection |
+| [`6.cic18_iforest_chisquare.ipynb`](experiments/notebooks/in2/6.cic18_iforest_chisquare.ipynb) | GenIDS-CIC18 | Isolation Forest | Binary anomaly detection |
 
 The XGBoost notebooks fit `MinMaxScaler` and `SelectKBest(chi2, k=25)` on the source training partition. For Isolation Forest, the training partition contains only normal flows and therefore cannot support supervised Chi-Square selection. Following the original experiment, its selector is fitted on the labeled source-domain validation partition. No target-domain labels are used for feature selection or threshold calibration.
 
@@ -134,9 +134,9 @@ IN3 evaluates the integration of labeled flows from the target domain into the s
 
 | Notebook | Strategy | Integration direction | Default rate |
 |---|---|---|---:|
-| [`experiment_in3_1.ipynb`](notebooks/in3/experiment_in3_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-NB15 | 20% |
-| [`experiment_in3_2.ipynb`](notebooks/in3/experiment_in3_2.ipynb) | Malicious (D)DoS | GenIDS-CIC18 → GenIDS-CIC17 | 20% |
-| [`experiment_in3_3.ipynb`](notebooks/in3/experiment_in3_3.ipynb) | Mixed | GenIDS-CIC18 → GenIDS-NB15 | 20% |
+| [`experiment_in3_1.ipynb`](experiments/notebooks/in3/experiment_in3_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-NB15 | 20% |
+| [`experiment_in3_2.ipynb`](experiments/notebooks/in3/experiment_in3_2.ipynb) | Malicious (D)DoS | GenIDS-CIC18 → GenIDS-CIC17 | 20% |
+| [`experiment_in3_3.ipynb`](experiments/notebooks/in3/experiment_in3_3.ipynb) | Mixed | GenIDS-CIC18 → GenIDS-NB15 | 20% |
 
 The notebooks can reproduce the 20%, 40%, 60%, and 80% scenarios by changing `INTEGRATION_RATE` and rerunning all cells.
 
@@ -148,9 +148,9 @@ IN4 combines labeled target-domain flow integration with PCA. PCA reduces the 70
 
 | Notebook | Strategy | Integration direction | Reported default rate |
 |---|---|---|---:|
-| [`experiment_in4_1.ipynb`](notebooks/in4/experiment_in4_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-CIC17 | 40% |
-| [`experiment_in4_2.ipynb`](notebooks/in4/experiment_in4_2.ipynb) | Malicious (D)DoS | GenIDS-CIC17 → GenIDS-CIC18 | 60% |
-| [`experiment_in4_3.ipynb`](notebooks/in4/experiment_in4_3.ipynb) | Mixed | GenIDS-CIC17 → GenIDS-CIC18 | 20% |
+| [`experiment_in4_1.ipynb`](experiments/notebooks/in4/experiment_in4_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-CIC17 | 40% |
+| [`experiment_in4_2.ipynb`](experiments/notebooks/in4/experiment_in4_2.ipynb) | Malicious (D)DoS | GenIDS-CIC17 → GenIDS-CIC18 | 60% |
+| [`experiment_in4_3.ipynb`](experiments/notebooks/in4/experiment_in4_3.ipynb) | Mixed | GenIDS-CIC17 → GenIDS-CIC18 | 20% |
 
 Where indicated in the configuration cell, the integration-rate variable may be changed to reproduce the remaining 20%, 40%, 60%, and 80% scenarios.
 
@@ -160,9 +160,9 @@ IN5 combines labeled target-domain flow integration with Chi-Square feature sele
 
 | Notebook | Strategy | Integration direction | Reported default rate |
 |---|---|---|---:|
-| [`experiment_in5_1.ipynb`](notebooks/in5/experiment_in5_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-CIC17 | 40% |
-| [`experiment_in5_2.ipynb`](notebooks/in5/experiment_in5_2.ipynb) | Malicious (D)DoS | GenIDS-CIC17 → GenIDS-CIC18 | 60% |
-| [`experiment_in5_3.ipynb`](notebooks/in5/experiment_in5_3.ipynb) | Mixed | GenIDS-CIC17 → GenIDS-CIC18 | 20% |
+| [`experiment_in5_1.ipynb`](experiments/notebooks/in5/experiment_in5_1.ipynb) | Benign | GenIDS-CIC18 → GenIDS-CIC17 | 40% |
+| [`experiment_in5_2.ipynb`](experiments/notebooks/in5/experiment_in5_2.ipynb) | Malicious (D)DoS | GenIDS-CIC17 → GenIDS-CIC18 | 60% |
+| [`experiment_in5_3.ipynb`](experiments/notebooks/in5/experiment_in5_3.ipynb) | Mixed | GenIDS-CIC17 → GenIDS-CIC18 | 20% |
 
 The integration-rate variable may be changed to reproduce the 20%, 40%, 60%, and 80% scenarios.
 
