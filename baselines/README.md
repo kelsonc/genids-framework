@@ -56,9 +56,9 @@ baselines/
 
 | Source dataset | Binary XGBoost | Binary Isolation Forest | Multiclass XGBoost |
 |---|---|---|---|
-| GenIDS-NB15 | [`xgboost_binary.ipynb`](notebooks/genids_unsw15/1.unsw_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](notebooks/genids_unsw15/2.unsw_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](notebooks/genids_unsw15/3.unsw_xgb_baseline_multiclass.ipynb) |
-| GenIDS-CIC17 | [`xgboost_binary.ipynb`](notebooks/genids_cic17/1.cic17_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](notebooks/genids_cic17/2.cic17_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](notebooks/genids_cic17/3.cic17_xgb_baseline_multiclass.ipynb) |
-| GenIDS-CIC18 | [`xgboost_binary.ipynb`](notebooks/genids_cic18/1.cic18_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](notebooks/genids_cic18/2.cic18_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](notebooks/genids_cic18/3.cic18_xgb_baseline_multiclass.ipynb) |
+| GenIDS-NB15 | [`xgboost_binary.ipynb`](baselines/genids_unsw15/1.unsw_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](baselines/genids_unsw15/2.unsw_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](baselines/genids_unsw15/3.unsw_xgb_baseline_multiclass.ipynb) |
+| GenIDS-CIC17 | [`xgboost_binary.ipynb`](baselines/genids_cic17/1.cic17_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](baselines/genids_cic17/2.cic17_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](baselines/genids_cic17/3.cic17_xgb_baseline_multiclass.ipynb) |
+| GenIDS-CIC18 | [`xgboost_binary.ipynb`](notebooks/genids_cic18/1.cic18_xgb_baseline_binary.ipynb) | [`isolation_forest_binary.ipynb`](baselines/genids_cic18/2.cic18_iforest_baseline_binary.ipynb) | [`xgboost_multiclass.ipynb`](baselines/genids_cic18/3.cic18_xgb_baseline_multiclass.ipynb) |
 
 ## Requirements
 
