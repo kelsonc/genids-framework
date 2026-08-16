@@ -193,11 +193,11 @@ This configuration describes the environment used by the authors and should not 
 - NFStream
 - Matplotlib
 
-The exact dependency versions will be provided in `requirements.txt`.
+The exact dependency versions are provided in `requirements.txt`.
 
 ## Reproducibility
 
-The reproduction resources will include:
+The reproduction resources include:
 
 - source-code documentation;
 - instructions for downloading and organizing the GenIDS Benchmark datasets;
@@ -206,7 +206,7 @@ The reproduction resources will include:
 - execution scripts;
 - mapping between notebooks and experiments.
 
-Detailed instructions will be available in `docs/REPRODUCIBILITY.md`.
+Detailed instructions are available in `docs/REPRODUCIBILITY.md`.
 
 ## Datasets
 
