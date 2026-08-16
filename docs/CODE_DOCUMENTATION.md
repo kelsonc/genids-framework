@@ -31,9 +31,9 @@ The nine notebooks under `baselines/notebooks/` establish the reference results 
 
 | Source domain | Binary XGBoost | Binary Isolation Forest | Multiclass XGBoost |
 |---|---|---|---|
-| GenIDS-NB15 | `baselines/notebooks/genids_nb15/xgboost_binary.ipynb` | `baselines/notebooks/genids_nb15/isolation_forest_binary.ipynb` | `baselines/notebooks/genids_nb15/xgboost_multiclass.ipynb` |
-| GenIDS-CIC17 | `baselines/notebooks/genids_cic17/xgboost_binary.ipynb` | `baselines/notebooks/genids_cic17/isolation_forest_binary.ipynb` | `baselines/notebooks/genids_cic17/xgboost_multiclass.ipynb` |
-| GenIDS-CIC18 | `baselines/notebooks/genids_cic18/xgboost_binary.ipynb` | `baselines/notebooks/genids_cic18/isolation_forest_binary.ipynb` | `baselines/notebooks/genids_cic18/xgboost_multiclass.ipynb` |
+| GenIDS-NB15 | `baselines/genids_nb15/xgboost_binary.ipynb` | `baselines/genids_nb15/isolation_forest_binary.ipynb` | `baselines/genids_nb15/xgboost_multiclass.ipynb` |
+| GenIDS-CIC17 | `baselines/genids_cic17/xgboost_binary.ipynb` | `baselines/genids_cic17/isolation_forest_binary.ipynb` | `baselines/genids_cic17/xgboost_multiclass.ipynb` |
+| GenIDS-CIC18 | `baselines/genids_cic18/xgboost_binary.ipynb` | `baselines/genids_cic18/isolation_forest_binary.ipynb` | `baselines/genids_cic18/xgboost_multiclass.ipynb` |
 
 Each notebook trains on one source domain, performs an intradomain hold-out evaluation, and evaluates the same fitted model and preprocessing objects on the other two domains. Isolation Forest is trained only with normal source flows and uses a labeled source-domain validation partition to calibrate its decision threshold.
 
@@ -95,7 +95,7 @@ Depending on the classification setting, the notebooks report Accuracy, Macro Pr
 
 | Thesis evidence | Responsible artifacts |
 |---|---|
-| Reference performance without interventions | `baselines/notebooks/` |
+| Reference performance without interventions | `baselines/` |
 | Isolated effect of PCA | `experiments/notebooks/in1/` |
 | Isolated effect of Chi-Square | `experiments/notebooks/in2/` |
 | Effect of target-domain flow integration | `experiments/notebooks/in3/` |
