@@ -192,7 +192,6 @@ This configuration describes the environment used by the authors and should not 
 - XGBoost
 - NFStream
 - Matplotlib
-- Seaborn
 
 The exact dependency versions will be provided in `requirements.txt`.
 
