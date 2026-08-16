@@ -26,7 +26,7 @@ flow_extraction/
 ├── README.md
 ├── features.pdf
 └── notebooks/
-    ├── genids_unws15/
+    ├── genids_unsw15/
     │   ├── 1_extraction_daily_flows_unsw.ipynb
     │   └── 2_full_flows_unsw.ipynb
     ├── genids_cic17/
@@ -59,7 +59,7 @@ local_data/
 │   ├── cic_ids2017/
 │   └── cic_ids2018/
 └── extracted_flows/
-    ├── genids_unws15/
+    ├── genids_unsw15/
     ├── genids_cic17/
     └── genids_cic18/
 ```
