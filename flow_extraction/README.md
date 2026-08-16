@@ -184,7 +184,7 @@ The extraction workflow requires:
 - Pandas;
 - Pytz.
 
-The fixed package versions used by GenIDS Framework must be installed from the repository-level `requirements.txt` when it becomes available.
+The fixed package versions used by GenIDS Framework must be installed from the repository-level `requirements.txt`.
 
 ## Generated Artifacts
 
