@@ -79,23 +79,65 @@ The flow-integration experiments consider normal, malicious, and mixed flows fro
 ```text
 GenIDS-Framework/
 |
+|-- baselines/
+|   |-- genids_cic17/
+|       |-- 1.cic17_xgb_baseline_binary.ipynb
+|       |-- 2.cic17_iforest_baseline_binary.ipynb
+|   `   |-- 3.cic17_xgb_baseline_multiclass.ipynb
+|   |-- genids_cic18/
+|       |-- 1.cic18_xgb_baseline_binary.ipynb
+|       |-- 2.cic18_iforest_baseline_binary.ipynb
+|       |-- 3.cic18_xgb_baseline_multiclass.ipynb
+|   |-- genids_unsw15/
+|       |-- 1.unsw_xgb_baseline_binary.ipynb
+|       |-- 2.unsw_iforest_baseline_binary.ipynb
+|   `   |-- 3.unsw_xgb_baseline_multiclass.ipynb
+|   |-- README.md
+|
 |-- docs/
+|   |-- CODE_DOCUMENTATION.md
 |   |-- REPRODUCIBILITY.md
 |
-|-- flow_extraction/
+|-- experiments/
+|   |-- notebooks/
+|       |-- in1/
+|           |-- 1.unsw_xgb_pca.ipynb
+|           |-- 2.cic17_xgb_pca.ipynb
+|           |-- 3.cic18_xgb_pca.ipynb
+|           |-- 4.unsw_iforest_pca.ipynb
+|           |-- 5.cic17_iforest_pca.ipynb
+|           |-- 6.cic18_iforest_pca.ipynb
+|       |-- in2/
+|           |-- 1.unsw_xgb_chisquare.ipynb
+|           |-- 2.cic17_xgb_chisquare.ipynb
+|           |-- 3.cic18_xgb_chisquare.ipynb
+|           |-- 4.unsw_iforest_chisquare.ipynb
+|           |-- 5.cic17_iforest_chisquare.ipynb
+|           |-- 6.cic18_iforest_chisquare.ipynb
+|       |-- in3/
+|           |-- experiment_in3_1.ipynb
+|           |-- experiment_in3_2.ipynb
+|           |-- experiment_in3_3.ipynb
+|       |-- in4/
+|           |-- experiment_in4_1.ipynb
+|           |-- experiment_in4_2.ipynb
+|           |-- experiment_in4_3.ipynb
+|       |-- in5/
+|           |-- experiment_in5_1.ipynb
+|           |-- experiment_in5_2.ipynb
+|           `-- experiment_in5_3.ipynb
 |   |-- README.md
-|   `-- notebooks/
-|       `-- genids_unsw15/
-|           |-- 1_extraction_daily_flows_unsw.ipynb
-|           |-- 2_full_flows_unsw.ipynb
-|       `-- genids_cic17/
+|
+|-- flow_extraction/
+|   |-- notebooks/
+|       |-- genids_cic17/
 |           |-- 1_extraction_flows_cic17_monday.ipynb
 |           |-- 2_extraction_flows_cic17_tuesday.ipynb
 |           |-- 3_extraction_flows_cic17_wednesday.ipynb
 |           |-- 4_extraction_flows_cic17_thursday.ipynb
 |           |-- 5_extraction_flows_cic17_friday.ipynb
 |           |-- 6_full_flows_cic17.ipynb
-|       `-- genids_cic18/
+|       |-- genids_cic18/
 |           |-- 1_extraction_flows_cic18_tuesday.ipynb
 |           |-- 2_extraction_flows_cic18_wednesday.ipynb
 |           |-- 3_extraction_flows_cic18_wednesday.ipynb
@@ -107,63 +149,16 @@ GenIDS-Framework/
 |           |-- 9_extraction_flows_cic18_friday.ipynb
 |           |-- 10_extraction_flows_cic18_friday.ipynb
 |           |-- 11_full_flows_cic18.ipynb
-|
-|-- baselines/
+|       |-- genids_unsw15/
+|           |-- 1_extraction_daily_flows_unsw.ipynb
+|           |-- 2_full_flows_unsw.ipynb
 |   |-- README.md
-|   `-- notebooks/
-|       |-- genids_nb15/
-|       |   |-- 1.unsw_xgb_baseline_binary.ipynb
-|       |   |-- 2.unsw_iforest_baseline_binary.ipynb
-|       |   `-- 3.unsw_xgb_baseline_multiclass.ipynb
-|       |
-|       |-- genids_cic17/
-|       |   |-- 1.cic17_xgb_baseline_binary.ipynb
-|       |   |-- 2.cic17_iforest_baseline_binary.ipynb
-|       |   `-- 3.cic17_xgb_baseline_multiclass.ipynb
-|       |
-|       `-- genids_cic18/
-|           |-- 1.cic18_xgb_baseline_binary.ipynb
-|           |-- 2.cic18_iforest_baseline_binary.ipynb
-|           `-- 3.cic18_xgb_baseline_multiclass.ipynb
+|   |-- features.pdf
 |
-|-- experiments/
-|   |-- README.md
-|   `-- notebooks/
-|       |-- in1/
-|       |   |-- 1.unsw_xgb_pca.ipynb
-|       |   |-- 2.cic17_xgb_pca.ipynb
-|       |   |-- 3.cic18_xgb_pca.ipynb
-|       |   |-- 4.unsw_iforest_pca.ipynb
-|       |   |-- 5.cic17_iforest_pca.ipynb
-|       |   `-- 6.cic18_iforest_pca.ipynb
-|       |
-|       |-- in2/
-|       |   |-- 1.unsw_xgb_chisquare.ipynb
-|       |   |-- 2.cic17_xgb_chisquare.ipynb
-|       |   |-- 3.cic18_xgb_chisquare.ipynb
-|       |   |-- 4.unsw_iforest_chisquare.ipynb
-|       |   |-- 5.cic17_iforest_chisquare.ipynb
-|       |   `-- 6.cic18_iforest_chisquare.ipynb
-|       |
-|       |-- in3/
-|       |   |-- experiment_in3_1.ipynb
-|       |   |-- experiment_in3_2.ipynb
-|       |   `-- experiment_in3_3.ipynb
-|       |
-|       |-- in4/
-|       |   |-- experiment_in4_1.ipynb
-|       |   |-- experiment_in4_2.ipynb
-|       |   `-- experiment_in4_3.ipynb
-|       |
-|       `-- in5/
-|           |-- experiment_in5_1.ipynb
-|           |-- experiment_in5_2.ipynb
-|           `-- experiment_in5_3.ipynb
-|
-|-- requirements.txt
-|-- citation.bib
 |-- LICENSE
-`-- README.md
+|-- README.md
+|-- citation.bib
+|-- requirements.txt
 ```
 
 ## Computational Environment
