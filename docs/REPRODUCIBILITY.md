@@ -94,7 +94,7 @@ For each notebook:
 
 ## 6. Baseline Reproduction
 
-The baseline notebooks are located under `baselines/notebooks/` and are indexed in [`baselines/README.md`](../baselines/README.md).
+The baseline notebooks are located under `baselines/` and are indexed in [`baselines/README.md`](../baselines/README.md).
 
 Each notebook uses one dataset as the source domain. The model is evaluated on an intradomain hold-out partition and then on the other two datasets without refitting the preprocessing objects or model.
 
