@@ -99,8 +99,8 @@ The notebooks do not download or redistribute the original captures. Before exec
 
 | Order | Notebook | Responsibility | Main output |
 |---:|---|---|---|
-| 1 | `01_nfstream_unsw15_pcaps.ipynb` | Extract flows from the January and February PCAP groups. | `pcap1.csv`, `pcap2.csv` |
-| 2 | `02_concat_unsw15_full.ipynb` | Consolidate the extracted groups, associate the UNSW-NB15 reference labels, standardize the labels, reduce the benign class, and export the complete flow file. | `GenIDS-NB15.csv` |
+| 1 | `1_extraction_daily_flows_unsw.ipynb` | Extract flows from the January and February PCAP groups. | `pcap1.csv`, `pcap2.csv` |
+| 2 | `2_full_flows_unsw.ipynb` | Consolidate the extracted groups, associate the UNSW-NB15 reference labels, standardize the labels, reduce the benign class, and export the complete flow file. | `GenIDS-NB15.csv` |
 
 The first notebook processes 53 January PCAP files and 26 sequentially named February PCAP files. The second notebook uses the original UNSW-NB15 flow table to associate the extracted flows with their attack categories.
 
@@ -108,12 +108,12 @@ The first notebook processes 53 January PCAP files and 26 sequentially named Feb
 
 | Order | Notebook | Main labels | Output |
 |---:|---|---|---|
-| 1 | `01_nfstream_cic17_monday.ipynb` | Benign | `01_nfstream_monday.csv` |
-| 2 | `02_nfstream_cic17_tuesday.ipynb` | FTP-Patator, SSH-Patator | `02_nfstream_tuesday.csv` |
-| 3 | `03_nfstream_cic17_wednesday.ipynb` | DoS variants, Heartbleed | `03_nfstream_wednesday.csv` |
-| 4 | `04_nfstream_cic17_thursday.ipynb` | Web attacks, Infiltration | `04_nfstream_thursday.csv` |
-| 5 | `05_nfstream_cic17_friday.ipynb` | DDoS, Botnet, PortScan | `05_nfstream_friday.csv` |
-| 6 | `06_concat_cic17_full.ipynb` | Consolidation and GenIDS class mapping | `GenIDS-CIC17.csv` |
+| 1 | `1_extraction_flows_cic17_monday.ipynb` | Benign | `01_nfstream_monday.csv` |
+| 2 | `2_extraction_flows_cic17_tuesday.ipynb` | FTP-Patator, SSH-Patator | `02_nfstream_tuesday.csv` |
+| 3 | `3_extraction_flows_cic17_wednesday.ipynb` | DoS variants, Heartbleed | `03_nfstream_wednesday.csv` |
+| 4 | `4_extraction_flows_cic17_thursday.ipynb` | Web attacks, Infiltration | `04_nfstream_thursday.csv` |
+| 5 | `5_extraction_flows_cic17_friday.ipynb` | DDoS, Botnet, PortScan | `05_nfstream_friday.csv` |
+| 6 | `6_full_flows_cic17.ipynb` | Consolidation and GenIDS class mapping | `GenIDS-CIC17.csv` |
 
 Notebooks 01–05 extract, clean, and label the flows associated with each daily PCAP capture. Notebook 06 validates and concatenates the five daily CSV files, maps the attack labels to the GenIDS representation, and exports the complete dataset-specific flow file.
 
@@ -121,17 +121,17 @@ Notebooks 01–05 extract, clean, and label the flows associated with each daily
 
 | Order | Notebook | Main attack type | Output |
 |---:|---|---|---|
-| 1 | `01_nfstream_cic2018_tuesday_ddos.ipynb` | DDoS LOIC | `01_cic2018_tuesday_nfstream_20_02_18.csv` |
-| 2 | `02_nfstream_cic2018_wednesday_bruteforce.ipynb` | FTP/SSH Brute Force | `02_cic2018_wednesday_nfstream_14_02_18.csv` |
-| 3 | `03_nfstream_cic2018_wednesday_ddos.ipynb` | DDoS HOIC/LOIC | `03_cic2018_wednesday_nfstream_ddos_21_02_18.csv` |
-| 4 | `04_nfstream_cic2018_wednesday_infiltration.ipynb` | Infiltration | `04_cic2018_wednesday_nfstream_28_02_18.csv` |
-| 5 | `05_nfstream_cic2018_thursday_dos.ipynb` | DoS GoldenEye/Slowloris | `05_cic2018_thursday_nfstream_dos_15_02_18.csv` |
-| 6 | `06_nfstream_cic2018_thursday_webattack.ipynb` | Web attacks | `06_cic2018_thursday_nfstream_webattack_22_02_18.csv` |
-| 7 | `07_nfstream_cic2018_thursday_infiltration.ipynb` | Infiltration | `07_cic2018_thursday_nfstream_infiltration_01_03_18.csv` |
-| 8 | `08_nfstream_cic2018_friday_dos.ipynb` | DoS Hulk/SlowHTTPTest | `08_cic2018_friday_nfstream_dos_16_02_18.csv` |
-| 9 | `09_nfstream_cic2018_friday_webattack.ipynb` | Web attacks | `09_cic2018_friday_nfstream_webattack_23_02_18.csv` |
-| 10 | `10_nfstream_cic2018_friday_botnet.ipynb` | Botnet | `10_cic2018_friday_nfstream_botnet_02_03_18.csv` |
-| 11 | `11_concat_cic2018_full.ipynb` | Consolidation and GenIDS class mapping | `GenIDS-CIC18.csv` |
+| 1 | `1_extraction_flows_cic2018_tuesday.ipynb` | DDoS LOIC | `01_cic2018_tuesday_nfstream_20_02_18.csv` |
+| 2 | `2_extraction_flows_cic2018_wednesday.ipynb` | FTP/SSH Brute Force | `02_cic2018_wednesday_nfstream_14_02_18.csv` |
+| 3 | `3_extraction_flows_cic2018_wednesday.ipynb` | DDoS HOIC/LOIC | `03_cic2018_wednesday_nfstream_ddos_21_02_18.csv` |
+| 4 | `4_extraction_flows_cic2018_wednesday.ipynb` | Infiltration | `04_cic2018_wednesday_nfstream_28_02_18.csv` |
+| 5 | `5_extraction_flows_cic2018_thursday.ipynb` | DoS GoldenEye/Slowloris | `05_cic2018_thursday_nfstream_dos_15_02_18.csv` |
+| 6 | `6_extraction_flows_cic2018_thursday.ipynb` | Web attacks | `06_cic2018_thursday_nfstream_webattack_22_02_18.csv` |
+| 7 | `7_extraction_flows_cic2018_thursday.ipynb` | Infiltration | `07_cic2018_thursday_nfstream_infiltration_01_03_18.csv` |
+| 8 | `8_extraction_flows_cic2018_friday.ipynb` | DoS Hulk/SlowHTTPTest | `08_cic2018_friday_nfstream_dos_16_02_18.csv` |
+| 9 | `9_extraction_flows_cic2018_friday.ipynb` | Web attacks | `09_cic2018_friday_nfstream_webattack_23_02_18.csv` |
+| 10 | `10_nfstream_cic2018_friday.ipynb` | Botnet | `10_cic2018_friday_nfstream_botnet_02_03_18.csv` |
+| 11 | `11_full_flows_cic18.ipynb` | Consolidation and GenIDS class mapping | `GenIDS-CIC18.csv` |
 
 Notebooks 01–10 validate and consolidate all PCAP parts configured for their corresponding date and attack type. Notebook 11 receives only the ten generated CSV files; it does not repeat the NFStream extraction.
 
