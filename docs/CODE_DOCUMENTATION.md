@@ -27,7 +27,7 @@ The processed datasets are distributed separately through the [GenIDS Benchmark]
 
 ## Baseline Notebooks
 
-The nine notebooks under `baselines/notebooks/` establish the reference results used to assess the interventions. Each source dataset is evaluated with binary XGBoost, binary Isolation Forest, and multiclass XGBoost.
+The nine notebooks under `baselines/` establish the reference results used to assess the interventions. Each source dataset is evaluated with binary XGBoost, binary Isolation Forest, and multiclass XGBoost.
 
 | Source domain | Binary XGBoost | Binary Isolation Forest | Multiclass XGBoost |
 |---|---|---|---|
