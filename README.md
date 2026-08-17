@@ -257,9 +257,9 @@ The intervention is evaluated with XGBoost and Isolation Forest using GenIDS-NB1
 
 ### Intervention IN3: Network Flow Integration
 
-- [Experiment_IN3_1](experiments/notebooks/notebook_in3_1.ipynb): benign flow integration.
-- [Experiment_IN3_2](experiments/notebooks/notebook_in3_2.ipynb): malicious (D)DoS flow integration.
-- [Experiment_IN3_3](experiments/notebooks/notebook_in3_3.ipynb): mixed integration of benign and malicious (D)DoS flows.
+- [Experiment_IN3_1](experiments/notebooks/in3/experiment_in3_1.ipynb): benign flow integration.
+- [Experiment_IN3_2](experiments/notebooks/in3/experiment_in3_2.ipynb): malicious (D)DoS flow integration.
+- [Experiment_IN3_3](experiments/notebooks/in3/experiment_in3_3.ipynb): mixed integration of benign and malicious (D)DoS flows.
 
 Experiments 1-3 evaluate integration percentages of 20%, 40%, 60%, and 80% across Interset combinations of GenIDS-NB15, GenIDS-CIC17, and GenIDS-CIC18.
 
@@ -267,17 +267,17 @@ Experiments 1-3 evaluate integration percentages of 20%, 40%, 60%, and 80% acros
 
 Principal Component Analysis (PCA) is combined with the corresponding flow-integration strategy. In the experiments reported in the study, PCA transforms the common feature space from 70 original features to 25 principal components.
 
-- [Experiment_IN4_1](experiments/notebooks/notebook_in4_1.ipynb): PCA + benign flow integration.
-- [Experiment_IN4_2](experiments/notebooks/notebook_in4_2.ipynb): PCA + malicious (D)DoS flow integration.
-- [Experiment_IN4_3](experiments/notebooks/notebook_in4_3.ipynb): PCA + mixed flow integration.
+- [Experiment_IN4_1](experiments/notebooks/in4/experiment_in4_1.ipynb): PCA + benign flow integration.
+- [Experiment_IN4_2](experiments/notebooks/in4/experiment_in4_2.ipynb): PCA + malicious (D)DoS flow integration.
+- [Experiment_IN4_3](experiments/notebooks/in4/experiment_in4_3.ipynb): PCA + mixed flow integration.
 
 ### Intervention IN5: Chi-Square Feature Selection + Network Flow Integration
 
 Chi-Square feature selection is combined with the corresponding flow-integration strategy. The feature-selection step reduces the common feature space from 70 to 25 selected features.
 
-- [Experiment_IN5_1](experiments/notebooks/notebook_in5_1.ipynb): Chi-Square + benign flow integration.
-- [Experiment_IN5_2](experiments/notebooks/notebook_in5_2.ipynb): Chi-Square + malicious (D)DoS flow integration.
-- [Experiment_IN5_3](experiments/notebooks/notebook_in5_3.ipynb): Chi-Square + mixed flow integration.
+- [Experiment_IN5_1](experiments/notebooks/in5/experiment_in5_1.ipynb): Chi-Square + benign flow integration.
+- [Experiment_IN5_2](experiments/notebooks/in5/experiment_in5_2.ipynb): Chi-Square + malicious (D)DoS flow integration.
+- [Experiment_IN5_3](experiments/notebooks/in5/experiment_in5_3.ipynb): Chi-Square + mixed flow integration.
 
 Together, these artifacts provide the code, standardized data references, and supplementary feature documentation associated with the experimental evaluation presented in the study.
 
